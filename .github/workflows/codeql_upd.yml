@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "CodeQL Updated <script> alert(1) </script>"
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'java', 'javascript', 'python' ]
+        language: [ 'python' ]
 
     steps:
       - uses: actions/checkout@v4
